@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  iipsrv:
+    # platform: linux/amd64
+    build: .
+    environment:
+      - LOGFILE=/dev/stderr
+      - URI_MAP=iiif=>IIIF
+      - VERBOSITY=6
+      - FILESYSTEM_PREFIX=/images/
+      - MEMCACHED_SERVERS=localhost
+      - IIIF_VERSION=3
+    volumes:
+      - ./data/images:/images
+    ports:
+      - "9002:80"

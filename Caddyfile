@@ -1,0 +1,8 @@
+http://:80 {
+	handle /iiif/* {
+		reverse_proxy 127.0.0.1:9000 {
+			transport fastcgi
+		}
+	}
+	encode zstd
+}

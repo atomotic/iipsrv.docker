@@ -1,0 +1,3 @@
+#!/command/execlineb -P
+with-contenv
+/iipsrv/iipsrv.fcgi --bind 0.0.0.0:9000
