@@ -10,6 +10,7 @@ services:
       - FILESYSTEM_PREFIX=/images/
       - MEMCACHED_SERVERS=localhost
       - IIIF_VERSION=3
+      - CORS=*
     volumes:
       - ./data/images:/images
     ports:
