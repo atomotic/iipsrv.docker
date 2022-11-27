@@ -12,7 +12,7 @@ A ready image (x86_64) in available on [docker hub](https://hub.docker.com/r/ato
         git clone https://github.com/atomotic/iipsrv.docker.git
 
 2. Configure the [host directory](https://github.com/atomotic/iipsrv.docker/blob/main/docker-compose.yml#L14) containing your images (ptiff, jp2) and mount in `/images`
-3. Configure iipsrv via [ENV](https://github.com/atomotic/iipsrv.docker/blob/main/docker-compose.yml#L14). See here the documentation [Server Configuration / Startup variables](https://iipimage.sourceforge.io/documentation/server/#clean) 
+3. Configure iipsrv via [ENV](https://github.com/atomotic/iipsrv.docker/blob/main/docker-compose.yml#L7-L12). See here the documentation [Server Configuration / Startup variables](https://iipimage.sourceforge.io/documentation/server/#clean) 
 
 4. Launch it
 
