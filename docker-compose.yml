@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   iipsrv:
-    # platform: linux/amd64
+    # image: atomotic/iipsrv:latest
     build: .
     environment:
       - LOGFILE=/dev/stderr
