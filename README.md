@@ -3,11 +3,11 @@
 [iipsrv](https://github.com/ruven/iipsrv) in single docker container. Compiled with openjpeg, so it can serve JPEG2000 images. Also including [caddy](https://github.com/atomotic/iipsrv.docker/blob/main/Caddyfile) (for an http interface) and memcached.   
 The main purpose of this image is local development of IIIF applications.
 
-A ready image (x86_64) in available on [docker hub](https://hub.docker.com/r/atomotic/iipsrv) (328.11 MB compressed).
+Ready images (x86_64 and aarch64) are available on [docker hub](https://hub.docker.com/r/atomotic/iipsrv) (+300 MB compressed).
 
 ## Usage
 
-1. Clone this repo (note: tested on macos/m1 hardware, [aarch64](https://github.com/atomotic/iipsrv.docker/blob/main/Dockerfile#L16))
+1. Clone this repo
 
         git clone https://github.com/atomotic/iipsrv.docker.git
 
