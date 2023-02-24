@@ -13,5 +13,6 @@ services:
       - CORS=*
     volumes:
       - ./data/images:/images
+      - ./data/www:/www
     ports:
       - "9002:80"

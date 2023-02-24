@@ -10,6 +10,12 @@ http://:80 {
 			transport fastcgi
 		}
 	}
+
+	handle_path /* {
+		root * /www
+		file_server browse
+	}
+
 	metrics /metrics
 	encode zstd
 }
