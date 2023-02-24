@@ -2,7 +2,7 @@ FROM caddy as caddy
 FROM debian:stable-slim
 RUN apt update && apt install -y \
     build-essential git libtiff-dev autoconf libtool \
-    pkg-config cmake libmemcached-dev xz-utils memcached \
+    pkg-config cmake libmemcached-dev xz-utils memcached wget \
     && rm -rf /var/lib/apt/lists/*
 RUN git clone https://github.com/uclouvain/openjpeg /tmp/openjpeg; cd /tmp/openjpeg; cmake .; make; make install
 RUN printf "include /etc/ld.so.conf.d/*.conf\ninclude /usr/local/lib\n" > /etc/ld.so.conf && ldconfig
